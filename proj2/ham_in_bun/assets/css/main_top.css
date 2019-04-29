@@ -1,0 +1,16 @@
+.main_pic {
+
+    width: 55%;
+    display: inline-block;
+
+}
+
+.brief .txt {
+
+    text-align: right;
+    padding-right: 10px;
+    display: inline-block;
+    width: 42%;
+    vertical-align: top;
+
+}

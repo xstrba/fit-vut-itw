@@ -1,0 +1,73 @@
+img.big_burger {
+
+    width: 100%;
+
+}
+
+.slider_arrow {
+
+    color: #f1c40f;
+    font-size: 3em;
+    cursor: pointer;
+    margin: 0 10px;
+
+}
+
+.slider_arrow:hover {
+
+    color: #e67e22;
+
+}
+
+.slider {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 70vh; */
+
+}
+
+.slider_list {
+
+    display: inline-block;
+    overflow-x: hidden;
+    z-index: -1;
+
+}
+
+.slider_list ul{
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    width: max-content;
+    overflow: hidden;
+    display: inline-block;
+
+}
+
+.slider_item {
+
+    width: 26em;
+    display: none;
+    float: left;
+    position: relative;
+
+}
+
+.slider_item.active {
+
+    display: inline-block;
+
+}
+
+.slider_caption {
+
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+
+}

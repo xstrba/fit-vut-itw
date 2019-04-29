@@ -1,0 +1,106 @@
+.form {
+
+    width: 100%;
+    text-align: center;
+
+}
+
+.form_box {
+
+    text-align: center;
+    width: min-content;
+    margin: 0 auto;
+    padding: 20px;
+    background: #3498db;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.form_box input{
+
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+
+}
+
+.form_box input:focus{
+
+    outline: none;
+    background: #f39c12;
+    font-weight: bold;
+    color: white;
+
+}
+
+.form_box input[type="number"] {
+
+    display: inline-block;
+    width: 100px;
+
+}
+
+.form_box button[type="submit"] {
+
+    padding: 10px;
+    background: none;
+    border: 2px solid #f39c12;
+    border-radius: 10px;
+    color: white;
+
+}
+
+.form_box button[type="submit"]:hover {
+
+    background: #f39c12;
+    color: white;
+    cursor: pointer;
+
+}
+
+.form_box input[type="datetime-local"] {
+
+    color: #f39c12;
+
+}
+
+.form_box input[type="datetime-local"]:focus {
+
+    color: white;
+    font-weight: bold;
+
+}
+
+.form_box select{
+
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #f39c12;
+    color: #f39c12;
+    background: white;
+
+}
+
+.form_box select:focus{
+
+    outline: none;
+    background: #f39c12;
+    font-weight: bold;
+    color: white;
+
+}
+
+.form_box .plus {
+
+    margin-left: 5px;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #f39c12;
+
+}

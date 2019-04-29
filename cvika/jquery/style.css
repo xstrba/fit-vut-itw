@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+}
+div#outer-frame {
+    background-position: left top, right top, right bottom, left bottom, left top, left bottom, left top, right top;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
+    width: 500px;
+    height: 500px;
+    padding: 125px 0px 0px 125px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.blue {
+
+    background-image: url('images/blue/tl.png'), url('images/blue/tr.png'), url('images/blue/br.png'),  url('images/blue/bl.png'), url('images/blue/t.png'), url('images/blue/b.png'), url('images/blue/l.png'), url('images/blue/r.png');
+
+}
+
+.red {
+
+    background-image: url('images/red/tl.png'), url('images/red/tr.png'), url('images/red/br.png'),  url('images/red/bl.png'), url('images/red/t.png'), url('images/red/b.png'), url('images/red/l.png'), url('images/red/r.png');
+
+}
+
+.yellow {
+
+        background-image: url('images/yellow/tl.png'), url('images/yellow/tr.png'), url('images/yellow/br.png'),  url('images/yellow/bl.png'), url('images/yellow/t.png'), url('images/yellow/b.png'), url('images/yellow/l.png'), url('images/yellow/r.png');
+
+}
+
+div#inner-frame {
+    border-style: solid;
+    border-width: 5px;
+    border-image: url('images/border.png') 5 repeat;
+    -moz-border-image: url('images/border.png') 5 repeat;
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 5px #888;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+}
+
+div#inner-frame p {
+    font-size: 0.85em;
+    margin: 0px 30px 30px 30px;
+    text-align: justify;
+    overflow: hidden;
+    text-shadow: 2px 2px 2px #000;
+}
+
+div#inner-frame p:first-child {
+    margin: 30px 30px 0px 30px;
+}
+
+div#underlying-frame {
+    position: relative;
+    top: -330px;
+    left: 30px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+div#selector > div {
+    width: 599px;
+    margin: 0px auto;
+}
+
+div#selector {
+    margin-top: 10px;
+    border: 1px dashed black;
+    width: max-content;
+}
+
+div#selector img {
+    vertical-align: middle;
+}

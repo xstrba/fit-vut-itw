@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="cs" dir="ltr">
+    <head>
+        <meta charset="ISO-8859-2">
+        <title>ITW - tvorba webových stránek</title>
+    </head>
+    <body>
+        <h1><a href="">ITW - tvorba webových stránek</a></h1>
+        <ul>
+            <li><a href="#s01">O předmětu</a></li>
+            <li><a href="#s02">Přednášky</a></li>
+            <li><a href="#s03">Přehled výsledků</a></li>
+            <li><a href="#s04">Cvičení</a></li>
+            <li><a href="#s05">Kontaktujte nás</a></li>
+            <li><a href="#s06">Související předměty</a></li>
+        </ul>
+
+        <!--  ===========================================================  -->
+
+        <h2 id="s01">O předmětu ITW - tvorba webových stránek</h2>
+            <p>Lorem ipsum dolor sit amet, <mark>consectetur adipiscing elit</mark>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <mark>velit esse cillum</mark> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <!--  ===========================================================  -->
+
+        <h2 id="s02">Přednášky</h2>
+            <div class="">
+                <img src="icons/icon1.gif" alt="icon1" >
+                <a href="https://wis.fit.vutbr.cz/FIT/st/cfs.php?file=%2Fcourse%2FITW-IT%2Flectures%2Fitw_p01.pdf&cid=12802" target="_blank">
+                    ITW_slides01
+                </a>
+                <p>
+                    O čom bude predet a ako fuguje www.
+                </p>
+            </div>
+            <div class="">
+                <img src="icons/icon2.gif" alt="icon2" >
+                <a href="https://wis.fit.vutbr.cz/FIT/st/cfs.php?file=%2Fcourse%2FITW-IT%2Flectures%2Fitw_p02.pdf&cid=12802" target="_blank">
+                    ITW_slides02
+                </a>
+                <p>
+                    Značkovacie jazyky a úvod do HTML.
+                </p>
+            </div>
+            <div class="">
+                <img src="icons/icon3.gif" alt="icon3" >
+                <a href="https://wis.fit.vutbr.cz/FIT/st/cfs.php?file=%2Fcourse%2FITW-IT%2Flectures%2Fitw_p03.pdf&cid=12802" target="_blank">
+                    ITW_slides03
+                </a>
+                <p>
+                    Úvod do CSS - ako spraviť stránky krásne.
+                </p>
+            </div>
+            <div class="">
+                <img src="icons/icon4.gif" alt="icon4" >
+                <a href="https://wis.fit.vutbr.cz/FIT/st/cfs.php?file=%2Fcourse%2FITW-IT%2Flectures%2Fitw_p04.pdf&cid=12802" target="_blank">
+                    ITW_slides04
+                </a>
+                <p>
+                    Niečo viac o CSS. Box model - práca s blokovými elementmi.
+                </p>
+            </div>
+
+            <!--  ===========================================================  -->
+
+        <h2 id="s03">Přehled výsledků</h2>
+            <table>
+                    <tr>
+                        <th rowspan="3">Jméno</th>
+                        <th colspan="6">Body</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">2010</th>
+                        <th colspan="2">2011</th>
+                        <th colspan="2">2012</th>
+                    </tr>
+                    <tr>
+                        <th>Púlsem.</th>
+                        <th>Zk.</th>
+                        <th>Púlsem.</th>
+                        <th>Zk.</th>
+                        <th>Púlsem.</th>
+                        <th>Zk.</th>
+                    </tr>
+                    <tr>
+                        <td>Jan Novák</td>
+                        <td>18</td>
+                        <td>72</td>
+                        <td>20</td>
+                        <td>80</td>
+                        <td>10</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Zuzana Černá</td>
+                        <td>10</td>
+                        <td>50</td>
+                        <td>20</td>
+                        <td>75</td>
+                        <td>25</td>
+                        <td>99</td>
+                    </tr>
+            </table>
+
+            <!--  ===========================================================  -->
+
+        <h2 id="s04">Cvičení</h2>
+            <div class="prednaska" id="c1">
+            <h3><em>Cvičení 1</em> DNS a HTTP</h3>
+            <ol>
+            <li>Připojte se na server <kbd>merlin.fit.vutbr.cz</kbd></li>
+            <li>Domain Name Service (DNS)
+                <ul>
+                <li>Seznámení s programem <kbd>host</kbd> (příp. <kbd>nslookup</kbd>)</li>
+                <li>Zjistěte IP adresu serveru <kbd>http://www.fbm.vutbr.cz/</kbd></li>
+                <li>Zjistěte doménové jméno serveru s IP adresou <kbd>193.108.106.40</kbd></li>
+            	<li>Jaké je skutečné jméno serveru, na kterém běží web FP?</li>
+                </ul>
+            </li>
+            <li>Seznamte se s programem <kbd>telnet</kbd></li>
+            <li>Protokol HTTP
+                <ul>
+                <li>Připojení na server <kbd>www.fit.vutbr.cz</kbd> na portu 80 (služba WWW)</li>
+                <li>Zadání požadavku <kbd>GET / HTTP/1.0</kbd> + prázdný řádek</li>
+                <li>Prohlédněte si hlavičku odpovědi</li>
+                <li>Totéž HTTP/1.1 (je třeba zadat URL hostitele)</li>
+            	<li>Zkuste takto stáhnout dokument <a href="http://www.fit.vutbr.cz/links/">http://www.fit.vutbr.cz/links/</a></li>
+                <li>Zkuste jiné adresy</li>
+                </ul>
+            </li>
+            <li>Proxy
+            	<ul>
+            	<li>Připojte se k proxy serveru <kbd>cache.fit.vutbr.cz</kbd> port <kbd>3128</kbd></li>
+            	<li>Stáhněte úvodní stránku <kbd>http://www.seznam.cz/</kbd></li>
+            	<li>Prostudujte hlavičku odpovědi</li>
+            	<!--<li>Jaký operační systém a web server používá Seznam?</li>-->
+            	</ul>
+            </li>
+            <li>Seznamte se s programem <kbd>wget</kbd>
+            	<ul>
+            	<li>Stahování dokumentů</li>
+            	<li>Rekurzivní stahování (<code>-r</code>), stahování vyžadovaných souborů (<code>-p</code>)</li>
+            	</ul>
+            </li>
+            <li>Dynamické stránky
+                <ul>
+                <li>Porovnejte stránky
+                    <a href="datum1.php">datum1.php</a>
+                    a
+                    <a href="datum2.html">datum2.html</a>
+                </li>
+                <li>Porovnejte kód stránek</li>
+                </ul>
+            </li>
+            <li>Seznamte se s vývojářskými nástroji prohlížeče Firefox, případně Chrome (Ctrl-Shift-I).
+            	Zaměřte se zejména na panel <em>Síť</em>, který umožňuje sledovat HTTP komunikaci.</li>
+            </ol>
+            </div>
+
+            <!-- ================================================================ -->
+
+            <div class="prednaska" id="c2">
+            <h3><em>Cvičení 2</em> Jazyk HTML</h3>
+            <ol>
+            <li>Seznamte se zběžně s organizací <a href="http://www.w3.org/TR/html5/">oficiální specifikace HTML</a>, všimněte si zvláště <a href="http://www.w3.org/TR/html5/index.html#elements-1">seznamu elementů</a> v příloze.</li>
+            <li>Zvolte si vhodný editor pro tvorbu WWW stránek
+            	<ul>
+            	<li>Na Linuxu např. <a href="http://kate.kde.org/">kate</a></li>
+            	<li>Ve Windows např. <a href="http://www.pspad.com/">PsPad</a></li>
+            	<li>... nebo jiný podle vlastní volby, který umožňuje komfortní editaci HTML a CSS kódu (ne WYSIWYG)</li>
+            	<li>Zjistěte, kde je možno ve zvoleném editoru nastavit použití znakové sady <code>UTF-8</code>.</li>
+            	</ul>
+            </li>
+            <li>Vytvořte nový soubor s příponou <strong>html</strong> a v něm základní kostru HTML dokumentu. Můžete například použít kód připravené šablony <a href="sablona.html">sablona.html</a>.</li>
+
+            <li>Doplňte do hlavičky titulek stránky <em>ITW - tvorba webových stránek</em> a zkontrolujte kódování dokumentu</li>
+            <li>Vložte do dokumentu nadpis první úrovně <em>ITW tvorba webových stránek</em>, kde <em>ITW</em> je zároveň odkaz vedoucí sám na sebe.</li>
+            <li>Dále vložte nadpisy druhé úrovně rozdělující dokument na pojmenované sekce:
+            	<ul>
+            	<li>O předmětu ITW - tvorba webových stránek</li>
+            	<li>Přednášky</li>
+            	<li>Přehled výsledků</li>
+            	<li>Cvičení</li>
+            	<li>Kontaktujte nás</li>
+            	<li>Související předměty</li>
+            	</ul>
+            </li>
+            <li>Zobrazte dokument ve webovém prohlížeči</li>
+            <li>Před první nadpis druhé úrovně vložte nabídku &ndash; odkazy vedoucí na jednotlivé části stránky označené nadpisy druhé úrovně. Použijte nečíslovaný seznam s vloženými odkazy.</li>
+            <li>Sekce <strong>O předmětu</strong> bude obsahovat souvislý blok textu, ve kterém budou některé úseky zvýrazněny.</li>
+            <li>Sekce <strong>Přednášky</strong> bude obsahovat 4 obecné bloky pro jednotlivé přednášky (vyberte si 4 přednášky předmětu ITW). Každý blok bude obsahovat:
+            	<ul>
+            	<li>ikonu ve formě obrázku (použijte tyto obrázky: <a href="ikony.zip">ikony.zip</a>)</li>
+            	<li>název přednášky ve formě odkazu vedoucího na slajdy k přednášce</li>
+            	<li>krátký popisný text k přednášce (1 věta)</li>
+            	</ul>
+            </li>
+            <li>Sekce <strong>Přehled výsledků</strong> bude obsahovat tabulku podle vzoru <a href="tabulka1.jpg">tabulka1.jpg</a> (stylem se zatím nezabývejte).</li>
+            <li>Sekce <strong>Cvičení</strong> bude obsahovat 4 bloky pro náhodně vybraná cvičení z předmětu ITW, obsah bude mít stejnou strukturu jako obsah sekce <strong>Přednášky</strong>.</li>
+            <li>Sekce <strong>Kontaktujte nás</strong> bude obsahovat následující kontakty (emailové odkazy budou ve formě odkazů, použijte definiční seznam):
+            	<ul>
+            	<li>Garant: itw-garant@fit.vutbr.cz</li>
+            	<li>Přednášející: itw-prednasejici@fit.vutbr.cz</li>
+            	<li>Cvičící: itw-cvicici@fit.vutbr.cz</li>
+            	</ul>
+            </li>
+            <li>Sekce <strong>Související předměty</strong> bude obsahovat odkazy na následující předměty (použijte nečíslovaný seznam s vloženými odkazy):
+            	<ul>
+            	<li>Informační systémy</li>
+            	<li>Pokročilé informační systémy</li>
+            	<li>Analýza informačních systémů</li>
+            	<li>Skriptovací jazyky</li>
+            	</ul>
+            </li>
+            <li>Vzhledem jednotlivých prvků se zatím nezabývejte.</li>
+            <li>Vytvořený dokument zkontrolujte <a href="http://validator.w3.org/">validátorem</a>.</li>
+            <li>Zpřístupněte výsledný dokument prostřednictvím serveru <a href="http://www.stud.fit.vutbr.cz">www.stud.fit.vutbr.cz</a>. Opět zkontrolujte kódování dokumentu. V případě problémů diagnostikujte chybu a konzultujte řešení se cvičícím.</li>
+            </ol>
+            </div>
+
+            <!-- ================================================================ -->
+
+            <div class="prednaska" id="c3">
+            <h3><em>Cvičení 3</em> Styl textu</h3>
+            <ol>
+
+            <li>Vyjděte z dokumentu vytvořeného v minulém cvičení.</li>
+            <li>Vytvořte prázdný stylový předpis <code>style.css</code> a přidejte odkaz na tento předpis do hlavičky HTML dokumentu.
+            	<ul><li>Změny stylu provádějte pouze v tomto stylovém předpisu, žádné přímé definice stylů nebudou v HTML kódu</li></ul>
+            </li>
+            <li>Do HTML kódu můžete přidávat prvky typu <code>div</code> potřebně pro dosažení požadovaného vzhledu. Zejména vhodné změny jsou:
+            	<ul>
+            	<li>Obalení sekce <em>O předmětu</em> do divu s vhodným identifikátorem.</li>
+            	<li>Obalení sekcí <em>Přednášky</em> až <em>Cvičení</em> do podobného divu opatřeného vhodným identifikátorem.</li>
+            	<li>Obalení sekcí <em>Kontaktujte nás</em> a <em>Související předměty</em> do podobného divu opatřeného vhodným identifikátorem.</li>
+            	</ul>
+            </li>
+            <li>Definujte pravidla stylu tak, aby se výsledek blížil následujícím obrázkům: <a href="zadani-2-top.png">horní část</a>, <a href="zadani-2-bottom.png">spodní část</a>
+            	<ul><li>Můžete využít následující obrázky: <a href="itw_cv3.zip">itw_cv3.zip</a></li></ul>
+            </li>
+            <li>Shrnutí vlastností:
+            	<ul>
+            	<li>použité fonty: Arial, Helvetica, obecné bezpatkové.</li>
+            	<li>použité barvy: <code>#656565</code> - šedá, <code>#b15e23</code> - světle hnědá na světlém pozadí, <code>#d5a17c</code> - světle hnědá na tmavém pozadí, <code>#3c1f0a</code> - tmavě hnědá, bílá, černá.</li>
+            	<li>malé trojúhelníčky pod menu se zobrazují při přejetí myší.</li>
+            	<li>linka pod přednáškami a cvičeními je tečkovaná.</li>
+            	<li>tabulka: barvy, okraje tabulky i jednotlivých buňěk, zarovnání.</li>
+            	<li>kontaktní informace: emaily zarovnány napravo, označení emailů zarovnáno nalevo, označení a emaily samotné tvoří vizuální sloupce.</li>
+            	<li>související předměty: odrážky ve formě obrázků.</li>
+            	</ul>
+            </li>
+            <li>Seznamte se <a href="http://jigsaw.w3.org/css-validator/">online validátorem CSS</a>. Zkontrolujte vytvořený stylový předpis validátorem.</li>
+            </ol>
+            </div>
+
+            <!-- ================================================================ -->
+
+            <div class="prednaska" id="c4">
+            <h3><em>Cvičení 4</em> CSS rozložení stránky</h3>
+            <ol>
+            <li>Vyjděte z dokumentu vytvořeného v minulém cvičení.</li>
+            <li>V HTML kódu můžete provádět drobné změny po konzultaci s cvičícím (některé tipy viz níže).</li>
+            <li>Změny stylu provádějte pouze v externím stylovém předpisu, žádné přímé definice stylů nebudou v HTML kódu.</li>
+            <li>Změňte a doplňte stylový předpis tak, aby se výsledné rozložení stránky blížilo následujícímu obrázku: <a href="zadani-3.png">zadani-3.png</a>.</li>
+            <li>Shrnutí vlastností:
+            	<ul>
+            	<li>použité obrázky na pozadí: <a href="itw_cv3.zip">itw_cv3.zip</a> (z minulého cvičení)</li>
+            	<li>použité barvy: <code>#656565</code> - šedá, <code>#b15e23</code> - světle hnědá na světlém pozadí, <code>#d5a17c</code> - světle hnědá na tmavém pozadí, <code>#3c1f0a</code> - tmavě hnědá, bílá, černá.</li>
+            	<li>šířka obsahu: 960 pixelů.</li>
+            	<li>střední část stránky rozdělena do dvou sloupců, levý sloupec cca o 20% větší než pravý.</li>
+            	<li>sekce <em>Přednášky</em> rozdělena do dvou stejně širokých sloupců.</li>
+            	<li>obrázek ke každé přednášce vlevo od nadpisu a popisného textu.</li>
+            	<li>v pravém sloupci pozadí se šedým gradientem.</li>
+            	</ul>
+            </li>
+            <li>Drobné tipy na úpravy HTML kódu, které by Vám mohly pomoci:
+            	<ul>
+            	<li>Obalení popisného textu a nadpisu každé přednášky do společného blokového elementu.</li>
+            	<li>Obalení popisného textu a obrázku každého cvičení do společného blokového elementu.</li>
+            	<li>Obalení sekcí <em>Přednášky</em> a <em>Přehled výsledků</em> do samostatného divu.</li>
+            	<li>Obalení sekce <em>Cvičení</em> do samostatného elementu div.</li>
+            	<li>Přidání samostatného divu za div obalující sekci <em>Cvičení</em>.</li>
+            	<li>Stejný postup jako v předchozích třech bodech aplikujte i v zápatí stránky, tedy u sekcí "Kontaktujte nás" a "Související předměty".</li>
+            	<li>Obalení všeho obsahu do jednoho nebo dvou divů, aby bylo možné definovat šířku obsahu.</li>
+            	</ul>
+            </li>
+            </ol>
+            </div>
+
+            <!--  ===========================================================  -->
+
+        <h2 id="s05">Kontaktujte nás</h2>
+            <dl>
+                <dt>Garant:</dt>
+                <dd><a href="#">itw-garant@fit.vutbr.cz</a></dd>
+
+                <dt>Přednášejíci:</dt>
+                <dd><a href="#">itw-prednasejici@fit.vutbr.cz</a></dd>
+
+                <dt>Cvičíci:</dt>
+                <dd><a href="#">itw-cvicici@fit.vutbr.cz</a></dd>
+            </dl>
+
+            <!--  ===========================================================  -->
+
+        <h2 id="s06">Související předměty</h2>
+            <ul>
+                <li><a href="http://www.fit.vutbr.cz/study/course-l.php.cs?id=6803">Informační systémy</a></li>
+                <li><a href="http://www.fit.vutbr.cz/study/course-l.php.cs?id=6918">Pokročilé informační systémy</a></li>
+                <li><a href="http://www.fit.vutbr.cz/study/course-l.php.cs?id=6727">Analýza informačních systémů</a></li>
+                <li><a href="http://www.fit.vutbr.cz/study/course-l.php.cs?id=6826">Skriptovací jazyky</a></li>
+            </ul>
+    </body>
+</html>

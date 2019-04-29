@@ -1,0 +1,71 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="cs">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="">
+    <meta name="keywords" content="" lang="cs">
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>CSS3 test</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+	           $('#inner-frame').css('border', '10px solid black');
+               var width = $('#selector div img').width();
+               $('#goright').css('position', 'relative');
+               var sliderw = $('#selector div').width();
+               $('#selector div').css('width', sliderw+'px');
+
+               $('img').click(function(){
+
+                   var color = $(this).attr('id');
+                   $('#outer-frame').addClass(color);
+
+               });
+
+               $('#goleft').click(function(){
+
+                   var items = $(this).siblings('div').children('img');
+
+                   items.first().insertAfter(items.last());
+
+                  items.show();
+                  $(this).siblings('div').children('img').last().hide();
+               });
+
+
+               $('#goright').click(function(){
+
+                   var items = $(this).siblings('div').children('img');
+
+                   items.last().insertBefore(items.first());
+
+                  items.show();
+                  $(this).siblings('div').children('img').last().hide();
+               });
+        });
+    </script>
+</head>
+<body>
+    <div id="outer-frame">
+        <div id="inner-frame">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula dui eu libero faucibus mattis faucibus augue molestie. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus at semper velit. Sed ut metus odio. Vivamus vehicula leo est.</p>
+
+            <p>Cras venenatis diam fermentum eros suscipit posuere. Donec vitae imperdiet leo. Quisque viverra pharetra augue, sed rhoncus ipsum consequat vitae. Ut nec magna mi. Integer eleifend vehicula quam venenatis luctus. Nulla et mattis sapien. In vitae nibh sapien. Pellentesque diam arcu, fermentum eu volutpat sit amet, ullamcorper quis ante.</p>
+        </div>
+        <div id="underlying-frame"></div>
+    </div>
+    <div id="selector">
+        <div>
+            <img src="images/left.png" />
+            <img src="images/shot-blue.png" />
+            <img src="images/shot-yellow.png" />
+            <!--<img src="images/shot-red.png" />-->
+            <img src="images/right.png" />
+        <div>
+    </div>
+</body>
+</html>
